@@ -1,0 +1,52 @@
+.users {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    margin: 50px auto;
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.users .list-title {
+    color: darkblue;
+}
+
+.users .users-form input,
+.users .users-form button {
+    border: none;
+    padding: 10px;
+}
+
+.users .users-form input {
+    margin-right: 10px;
+}
+
+.users .users-form button {
+    background-color: #0066ff;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.users .users-form button:hover {
+    background-color:  #003399;
+    cursor: pointer;
+}
+
+.users ul {
+    list-style: none;
+    padding: 0;
+    width: 70%;
+}
+
+.users ul li {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.users ul li:hover {
+    background-color: pink;
+}
