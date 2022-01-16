@@ -33,20 +33,9 @@
     cursor: pointer;
 }
 
-.users ul {
-    list-style: none;
-    padding: 0;
-    width: 70%;
+.users .error-msg {
+    color: red;
+    font-weight: bold;
 }
 
-.users ul li {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #333;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 5px;
-}
 
-.users ul li:hover {
-    background-color: pink;
-}
