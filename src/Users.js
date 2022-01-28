@@ -3,6 +3,8 @@ import './Users.css';
 
 import List from './List';
 
+
+
 class Users extends Component {
     constructor(props) {
         super(props);
@@ -26,9 +28,9 @@ class Users extends Component {
                 id: Date.now(),  // What else can be used as unique ID? How to generate it?
                 name: this.inputElement.value
             }
-            this.setState(() => {
+            this.setState((state) => {
                 return({
-                    user: this.state.user.concat(newUser),
+                    user: state.user.concat(newUser),
                     error: ''
                 })
             }) 
@@ -37,14 +39,19 @@ class Users extends Component {
         this.inputElement.value = '';
     }
 
+   
+
     removeUser = (id) => {
-        this.setState(() => {
+        this.setState((state) => {
             return({
                 // If filter method will return true, currently iterated obiect passed the filter (its' id !== id of clicked). If it return false (id of current iterated === id of clicked), it will not pass the filter and in the filtered array there will be only elements that passed.
-                user: this.state.user.filter(user => user.id !== id) 
+                user: state.user.filter(user => user.id !== id) ,
+
             })
         })
     }
+
+
 
     render() {
         return(
